@@ -1,0 +1,37 @@
+
+For plate BBE25-27_BSM27 HIGH CONCENTRATION pool:
+    - vortex thoroughly to mix
+    - transfer 30.06 to BBE25-27_BSM27 LOW CONCENTRATION pool
+    - label and preserve remainder
+    
+    
+
+For plate BSM35A_YS35 HIGH CONCENTRATION pool:
+    - vortex thoroughly to mix
+    - transfer 22.01 to BSM35A_YS35 LOW CONCENTRATION pool
+    - label and preserve remainder
+    
+    
+
+For plate YS-35-2 HIGH CONCENTRATION pool:
+    - vortex thoroughly to mix
+    - transfer 26.49 to YS-35-2 LOW CONCENTRATION pool
+    - label and preserve remainder
+    
+    
+
+For plate MG_test HIGH CONCENTRATION pool:
+    - vortex thoroughly to mix
+    - transfer 4.60 to MG_test LOW CONCENTRATION pool
+    - label and preserve remainder
+    
+    
+
+Combine all PER-PLATE POOLS (Low concentration + 1/10 high concentration) and concentrate
+    - combine volumes into a new tube 
+    - add 1103.16 µL SPRI beads.
+    - Mix on tube rotator 10 minutes
+    - remove supernatant and wash 2x with 80% EtOH
+    - Dry and elute in 52.59 µL H2O or Tris.
+
+You should now have 52.59 µL at approximately 5.00 ng/µL.
