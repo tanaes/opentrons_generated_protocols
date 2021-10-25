@@ -28,11 +28,14 @@ def run(protocol: protocol_api.ProtocolContext):
     # Plate BSM35A_YS35
     library2 = protocol.load_labware('biorad_96_wellplate_200ul_pcr', 2, 'BSM35A_YS35')
 
-    # Plate YS-35-2
-    library3 = protocol.load_labware('biorad_96_wellplate_200ul_pcr', 3, 'YS-35-2')
+    # Plate YS-35-2a
+    library3 = protocol.load_labware('biorad_96_wellplate_200ul_pcr', 3, 'YS-35-2a')
+
+    # Plate YS-35-2b
+    library4 = protocol.load_labware('biorad_96_wellplate_200ul_pcr', 4, 'YS-35-2b')
 
     # Plate MG_test
-    library4 = protocol.load_labware('biorad_96_wellplate_200ul_pcr', 4, 'MG_test')
+    library5 = protocol.load_labware('biorad_96_wellplate_200ul_pcr', 5, 'MG_test')
 
     # Transfer library1 high samples
     pipette.consolidate([8.90, 5.50, 9.60, 10.00, 1.70, 8.40, 1.20, 9.40, 5.20, 10.30, 6.40, 14.90, 10.40, 1.10, 2.20, 2.70, 2.00, 1.60, 7.20, 6.50, 7.30, 13.70, 6.30, 6.50, 5.90, 10.60, 8.20, 5.90, 12.90, 13.70, 11.70, 4.50, 5.80, 10.50, 12.80, 9.60, 11.30, 3.10, 6.60, 8.50],
@@ -55,21 +58,35 @@ def run(protocol: protocol_api.ProtocolContext):
                         tuberack_11['B2'])
 
     # Transfer library3 high samples
-    pipette.consolidate([3.80, 1.20, 5.40, 6.40, 2.90, 3.40, 0.90, 2.40, 3.60, 12.70, 9.50, 7.70, 12.80, 1.10, 14.40, 1.40, 9.70, 1.00, 14.40, 12.90, 1.00, 2.10, 10.70, 13.30, 12.90, 1.30, 13.60, 12.70, 9.20, 7.40, 1.80, 7.10, 1.70, 1.10, 1.40, 2.20, 14.50, 12.30, 11.00],
-                        [library3.wells_by_name()[well_name] for well_name in ['A1', 'B1', 'D1', 'H1', 'A2', 'C2', 'D2', 'E2', 'F2', 'G2', 'H2', 'B3', 'C3', 'D3', 'E3', 'F3', 'G3', 'H3', 'C4', 'D4', 'F4', 'G4', 'H4', 'A5', 'B5', 'C5', 'F5', 'A6', 'B6', 'C6', 'E6', 'A7', 'E7', 'C8', 'A9', 'F9', 'B10', 'B11', 'C11']],
+    pipette.consolidate([3.80, 1.20, 5.40, 6.40, 2.90, 3.40, 0.90, 2.40, 3.60, 12.70, 9.50, 7.70, 12.80, 1.10, 14.40, 1.40, 9.70, 1.00, 14.40, 12.90, 1.00, 2.10, 10.70, 13.30, 12.90, 1.30, 13.60],
+                        [library3.wells_by_name()[well_name] for well_name in 
+                        ['A1', 'B1', 'D1', 'H1', 'A2', 'C2', 'D2', 'E2', 'F2',  'G2', 'H2', 'B3',  'C3', 'D3',  'E3', 'F3', 'G3', 'H3',  'C4',  'D4', 'F4', 'G4',  'H4',  'A5',  'B5', 'C5',  'F5']],
                         tuberack_11['A3'])
 
     # Transfer library3 low samples
-    pipette.consolidate([1.50, 2.10, 2.70, 2.30, 2.30, 2.50, 5.80, 4.20, 5.00, 2.30, 2.70, 5.50, 2.90, 2.60, 5.00, 6.00, 4.00, 2.80, 3.30, 3.20, 20.00, 4.00, 5.50, 6.50, 1.80, 3.00, 14.40, 9.70, 19.10, 5.90, 1.90, 2.40, 5.90, 8.90, 12.20, 6.20, 8.90, 1.80, 5.00, 14.80, 8.40, 14.40, 5.70, 6.70, 3.50, 17.20, 4.50, 13.00, 2.70, 4.70, 2.10, 2.90, 10.40, 18.20, 5.30, 8.60],
-                        [library3.wells_by_name()[well_name] for well_name in ['C1', 'E1', 'F1', 'G1', 'B2', 'A3', 'A4', 'B4', 'E4', 'D5', 'E5', 'G5', 'H5', 'D6', 'F6', 'G6', 'H6', 'B7', 'C7', 'D7', 'F7', 'G7', 'H7', 'A8', 'B8', 'D8', 'E8', 'F8', 'G8', 'H8', 'B9', 'C9', 'D9', 'E9', 'G9', 'H9', 'A10', 'C10', 'D10', 'E10', 'F10', 'G10', 'H10', 'A11', 'D11', 'E11', 'F11', 'G11', 'H11', 'A12', 'B12', 'C12', 'D12', 'E12', 'F12', 'G12']],
+    pipette.consolidate([1.50, 2.10, 2.70, 2.30, 2.30, 2.50, 5.80, 4.20, 5.00, 2.30, 2.70, 5.50, 2.90],
+                        [library3.wells_by_name()[well_name] for well_name in 
+                        ['C1', 'E1', 'F1', 'G1', 'B2', 'A3', 'A4', 'B4', 'E4', 'D5', 'E5', 'G5', 'H5']],
                         tuberack_11['B3'])
 
     # Transfer library4 high samples
-    pipette.consolidate([0.80, 1.10, 1.50, 14.90, 1.00, 1.20, 0.90, 0.90, 1.00, 0.70, 0.80, 0.80, 0.70, 1.70, 1.50, 1.10, 1.00, 0.80, 1.60, 2.20, 0.80, 0.90, 0.80, 0.70, 1.10, 0.70, 0.90, 0.80, 0.70, 0.80, 1.00, 0.60],
-                        [library4.wells_by_name()[well_name] for well_name in ['A1', 'B1', 'C1', 'D1', 'E1', 'F1', 'G1', 'B2', 'D2', 'E2', 'G2', 'A3', 'B3', 'C3', 'D3', 'E3', 'F3', 'G3', 'A4', 'D4', 'E4', 'F4', 'G4', 'H4', 'B5', 'C5', 'D5', 'A6', 'B6', 'E6', 'F6', 'H6']],
-                        tuberack_11['A4'])
+    pipette.consolidate([12.70, 9.20, 7.40, 1.80, 7.10, 1.70, 1.10, 1.40, 2.20, 14.50, 12.30, 11.00],
+                        [library3.wells_by_name()[well_name] for well_name in 
+                        ['A6', 'B6', 'C6', 'E6', 'A7', 'E7', 'C8', 'A9', 'F9', 'B10', 'B11', 'C11']],
+                        tuberack_11['A3'])
 
     # Transfer library4 low samples
+    pipette.consolidate([2.60, 5.00, 6.00, 4.00, 2.80, 3.30, 3.20, 20.00, 4.00, 5.50, 6.50, 1.80, 3.00, 14.40, 9.70, 19.10, 5.90, 1.90, 2.40, 5.90, 8.90, 12.20, 6.20, 8.90, 1.80, 5.00, 14.80, 8.40, 14.40, 5.70, 6.70, 3.50, 17.20, 4.50, 13.00, 2.70, 4.70, 2.10, 2.90, 10.40, 18.20, 5.30, 8.60],
+                        [library3.wells_by_name()[well_name] for well_name in 
+                        ['D6', 'F6', 'G6', 'H6', 'B7', 'C7', 'D7', 'F7', 'G7', 'H7', 'A8', 'B8', 'D8', 'E8', 'F8', 'G8', 'H8', 'B9', 'C9', 'D9', 'E9', 'G9', 'H9', 'A10', 'C10', 'D10', 'E10', 'F10', 'G10', 'H10', 'A11', 'D11', 'E11', 'F11', 'G11', 'H11', 'A12', 'B12', 'C12', 'D12', 'E12', 'F12', 'G12']],
+                        tuberack_11['B3'])
+
+    # Transfer library5 high samples
+    pipette.consolidate([0.80, 1.10, 1.50, 14.90, 1.00, 1.20, 0.90, 0.90, 1.00, 0.70, 0.80, 0.80, 0.70, 1.70, 1.50, 1.10, 1.00, 0.80, 1.60, 2.20, 0.80, 0.90, 0.80, 0.70, 1.10, 0.70, 0.90, 0.80, 0.70, 0.80, 1.00, 0.60],
+                        [library5.wells_by_name()[well_name] for well_name in ['A1', 'B1', 'C1', 'D1', 'E1', 'F1', 'G1', 'B2', 'D2', 'E2', 'G2', 'A3', 'B3', 'C3', 'D3', 'E3', 'F3', 'G3', 'A4', 'D4', 'E4', 'F4', 'G4', 'H4', 'B5', 'C5', 'D5', 'A6', 'B6', 'E6', 'F6', 'H6']],
+                        tuberack_11['A4'])
+
+    # Transfer library5 low samples
     pipette.consolidate([5.80],
-                        [library4.wells_by_name()[well_name] for well_name in ['C4']],
+                        [library5.wells_by_name()[well_name] for well_name in ['C4']],
                         tuberack_11['B4'])
