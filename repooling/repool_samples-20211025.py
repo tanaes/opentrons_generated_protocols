@@ -71,13 +71,13 @@ def run(protocol: protocol_api.ProtocolContext):
 
     # Transfer library4 high samples
     pipette.consolidate([12.70, 9.20, 7.40, 1.80, 7.10, 1.70, 1.10, 1.40, 2.20, 14.50, 12.30, 11.00],
-                        [library3.wells_by_name()[well_name] for well_name in 
+                        [library4.wells_by_name()[well_name] for well_name in 
                         ['A6', 'B6', 'C6', 'E6', 'A7', 'E7', 'C8', 'A9', 'F9', 'B10', 'B11', 'C11']],
                         tuberack_11['A3'])
 
     # Transfer library4 low samples
     pipette.consolidate([2.60, 5.00, 6.00, 4.00, 2.80, 3.30, 3.20, 20.00, 4.00, 5.50, 6.50, 1.80, 3.00, 14.40, 9.70, 19.10, 5.90, 1.90, 2.40, 5.90, 8.90, 12.20, 6.20, 8.90, 1.80, 5.00, 14.80, 8.40, 14.40, 5.70, 6.70, 3.50, 17.20, 4.50, 13.00, 2.70, 4.70, 2.10, 2.90, 10.40, 18.20, 5.30, 8.60],
-                        [library3.wells_by_name()[well_name] for well_name in 
+                        [library4.wells_by_name()[well_name] for well_name in 
                         ['D6', 'F6', 'G6', 'H6', 'B7', 'C7', 'D7', 'F7', 'G7', 'H7', 'A8', 'B8', 'D8', 'E8', 'F8', 'G8', 'H8', 'B9', 'C9', 'D9', 'E9', 'G9', 'H9', 'A10', 'C10', 'D10', 'E10', 'F10', 'G10', 'H10', 'A11', 'D11', 'E11', 'F11', 'G11', 'H11', 'A12', 'B12', 'C12', 'D12', 'E12', 'F12', 'G12']],
                         tuberack_11['B3'])
 
